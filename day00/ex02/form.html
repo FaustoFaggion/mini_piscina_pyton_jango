@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<header>
+
+    <style>
+
+    </style>
+
+</header>
+
+<body>
+
+    <script>
+        function displayFormContents() {
+
+            var out = '';
+
+            out += 'Firstname = ' + document.getElementById('firstname').value + '\n';
+            out += 'Name = '      + document.getElementById('name').value      + '\n';
+            out += 'Phone = '     + document.getElementById('phone').value     + '\n';
+            out += 'Age = '       + document.getElementById('age').value       + '\n';
+            out += 'Email = '     + document.getElementById('email').value     + '\n';
+
+            out += 'Gender = ';
+            if (document.getElementById('gender_male').checked == true)
+                out += document.getElementById('gender_male').value;
+            if (document.getElementById('gender_female').checked == true)
+                out += document.getElementById('gender_female').value;
+            if (document.getElementById('gender_other').checked == true)
+                out += document.getElementById('gender_other').value;
+            out += '\n';
+
+            if (document.getElementById('student').checked == true)
+                out += 'Student at 42 = yes';
+            else
+                out += 'Student at 42 = no';
+
+            alert(out);
+
+        }
+    </script>
+    
+    <form>
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="firstname"><br><br>
+        <label for="name">Last name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="name">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="checkbox" id="student" name="student" value="student">
+        <label for="student">Student at 42?</label><br><br>
+        <label for="gender">Gender</label><br><br>
+        <input type="radio" id="gender_male" name="gender" value="Male">
+        <lable for="gender_male">Male</lable><br>
+        <input type="radio" id="gender_female" name="gender" value="Female">
+        <lable for="gender_male">Female</lable><br>
+        <input type="radio" id="gender_other" name="gender" value="Other">
+        <lable for="gender_other">Other</lable><br><br>
+        <button onclick="displayFormContents()">Submission</button>
+    </form>
+    </form>
+</body>
