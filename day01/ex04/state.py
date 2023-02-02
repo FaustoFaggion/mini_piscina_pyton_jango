@@ -1,7 +1,6 @@
 import sys
 
-def pdf_dictionaries(state):
-
+def pdf_dictionaries(city):
     states = {
         "Oregon" : "OR",
         "Alabama" : "AL",
@@ -15,14 +14,14 @@ def pdf_dictionaries(state):
         "CO": "Denver"
     }
 
-    val = " "
-    for key, value in states.items():
-        if key == state:
-            val = value
-            break
+    k = " "
     for key, value in capital_cities.items():
-        if key == val:
-            return value
+        if value == city:
+            k = key
+            break
+    for key, value in states.items():
+        if value == k:
+            return key
     return "Unknown state\n"
     
     
@@ -33,11 +32,11 @@ def chk_arg():
         sys.exit(-1)
     
 
-def display_capitals(city):
-    print(city)
+def display_capitals(state):
+    print(state)
 
     
 if  __name__ == '__main__':
     chk_arg()
-    city = pdf_dictionaries(sys.argv[1])
-    display_capitals(city)
+    state = pdf_dictionaries(sys.argv[1])
+    display_capitals(state)
