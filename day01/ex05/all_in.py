@@ -13,30 +13,18 @@ def pdf_dictionaries(city):
         "NJ": "Trenton",
         "CO": "Denver"
     }
-
-    k = " "
-    for key, value in capital_cities.items():
-        if value == city:
-            k = key
-            break
-    for key, value in states.items():
-        if value == k:
-            return key
-    return "Unknown state\n"
     
-    
-
-def chk_arg():
+    def chk_arg():
     i = len(sys.argv)
     if i != 2:
         sys.exit(-1)
     
 
-def display_state(state):
+def display_capitals(state):
     print(state)
 
     
 if  __name__ == '__main__':
     chk_arg()
     state = pdf_dictionaries(sys.argv[1])
-    display_state(state)
+    display_capitals(state)

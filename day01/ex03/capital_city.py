@@ -33,11 +33,11 @@ def chk_arg():
         sys.exit(-1)
     
 
-def display_capitals(city):
+def display_capital(city):
     print(city)
 
     
 if  __name__ == '__main__':
     chk_arg()
     city = pdf_dictionaries(sys.argv[1])
-    display_capitals(city)
+    display_capital(city)
