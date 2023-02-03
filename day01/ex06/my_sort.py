@@ -25,7 +25,7 @@ def create_dictionary():
     return d
         
 def sort_d(d):
-    sorted_d = sorted(d.items(), key=lambda x: (x[1], x[0]))
+    sorted_d = sorted(d.items(), key = lambda x: (x[1], x[0]))
     for key, value in sorted_d:
         print(value, " ", key)
     
