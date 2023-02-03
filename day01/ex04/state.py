@@ -22,7 +22,7 @@ def pdf_dictionaries(city):
     for key, value in states.items():
         if value == k:
             return key
-    return "Unknown state\n"
+    return "Unknown state"
     
     
 
