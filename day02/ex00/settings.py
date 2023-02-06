@@ -1,4 +1,4 @@
-NAME="eu_mesmo"
-SURNAME="você"
-AGE=1000
-PROFESSION="vagabundo"
+name="eu_mesmo"
+surename="você"
+age="1000"
+profession="vagabundo"
