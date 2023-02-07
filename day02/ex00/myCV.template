@@ -1,8 +1,6 @@
-Personal informatiom
+<h3>Personal informatiom</h3>
 
-Name: {name}
-Surename: {surename}
-Age: {age}
-Profession: {profession}
-</body>
-</html>
+<p>Name: Ana</p>
+<p>Surename: Maria</p>
+<p>Age: 1000</p>
+<p>Profession: Trabalhadora</p>
