@@ -35,6 +35,7 @@ def make_dic():
             dic[value] += ' ' + key 
     for key, value in dic.items():
         print(key, ":", value)
+        
 if __name__ == '__main__':
     make_list()
     make_dic()    
